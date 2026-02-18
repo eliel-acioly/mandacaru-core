@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,                 /* Ativa verificação rigorosa de tipos */
+    "esModuleInterop": true,        /* Permite importar módulos CommonJS como ES6 */
+    "skipLibCheck": true,           /* Pula verificação de libs internas (economiza tempo no celular) */
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

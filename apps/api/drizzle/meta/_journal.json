@@ -8,6 +8,20 @@
       "when": 1771378145447,
       "tag": "0000_chemical_whistler",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1771625419561,
+      "tag": "0001_naive_lilith",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771682007067,
+      "tag": "0002_plain_darkhawk",
+      "breakpoints": true
     }
   ]
 }

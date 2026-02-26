@@ -6,7 +6,8 @@ import {
   registerSchema, 
   loginSchema, 
   forgotPasswordSchema, 
-  resetPasswordSchema 
+  resetPasswordSchema,
+  verifyEmailSchema // ✉️ NOVO: Importando o schema de verificação
 } from './auth.schema';
 
 const authRoutes = Router();
@@ -17,13 +18,14 @@ authRoutes.post('/register', validateData(registerSchema), controller.register.b
 authRoutes.post('/login', validateData(loginSchema), controller.login.bind(controller));
 authRoutes.post('/google', controller.googleLogin.bind(controller));
 
-
-// 🚑 AS ROTAS NOVAS PRECISAM ESTAR AQUI:
+// 🚑 AS ROTAS DE RECUPERAÇÃO DE SENHA:
 authRoutes.post('/forgot-password', validateData(forgotPasswordSchema), controller.forgotPassword.bind(controller));
 authRoutes.post('/reset-password', validateData(resetPasswordSchema), controller.resetPassword.bind(controller));
+
+// ✉️ NOVA ROTA: Verificação de E-mail
+authRoutes.post('/verify-email', validateData(verifyEmailSchema), controller.verifyEmail.bind(controller));
 
 // Rota Privada
 authRoutes.get('/me', authMiddleware, controller.me.bind(controller));
 
 export { authRoutes };
-

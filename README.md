@@ -135,4 +135,3 @@ Se a arquitetura deste projeto economizou o seu tempo e te ajudou a construir a 
  * ⭐ Deixe uma estrela no repositório.
  * 🍴 Faça um fork e construa algo incrível.
  * 📢 Compartilhe com outros desenvolvedores.
-<!-- end list -->
